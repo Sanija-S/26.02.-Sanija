@@ -9,7 +9,7 @@ def main():# visam kas seit jabut zem def
         [sg.Output(size=(50,10), key='output')],# Outpuut= Multiline
 
  ]
-# definejam logu un galveno ciklu 
+   # definejam logu un galveno ciklu 
  
 
  window=sg.Window("Otrais uzdevums",dalas ,resizable=True)
