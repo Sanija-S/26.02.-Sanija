@@ -18,6 +18,7 @@ while True:
     if event== "Pārādīt attēlu":
        file_path=values("file_path")
        if file_path:
+           logs["image"].update(filename= file_path)
            
 
 
