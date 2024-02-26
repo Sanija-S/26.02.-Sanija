@@ -27,12 +27,22 @@ def main():# visam kas seit jabut zem def
 
           filename="1piemers.png"
           with open(filename, "a", encoding="utf-8") as file:
-            file.write(f"Ivēlētais adalaiks:{atlase}")
+            file.write(f"Ivēlētais adalaiks:{atlase}\n")
             file.write(f"Migla:{keksis}\n") #\n- sakt jauna rindaa
-            file.write(f"Tavs vards::{ievade}")
+            file.write(f"Tavs vards::{ievade}\n")
 
           window ["output"].update(value=f"ati ir ierakstīti failā {filename}")
- 
+
+          # notirit formu
+          window ["combo"].update(value="")
+          window ["checkbox"].update(value=False)
+          window ["input"].update(value="")
+          # notirit visu
+       elif event=="Notirīt visu":
+          window ["combo"].update(value="")
+          window ["checkbox"].update(value=False)
+          window ["input"].update(value="")
+          window ["output"].update(value="")
  window.close()
  
 if __name__ == '__main__':
